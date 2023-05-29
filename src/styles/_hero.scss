@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .hero {
     padding: 2.6vw;
     min-height: 80vh;
@@ -6,11 +8,21 @@
     color: #fff;
     font-size: 25px;
 
-    h1 {
-        margin-top: 20px;
-    }
-}
+    &__contente {
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
 
-.text {
-    color: #000;
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+
+        }
+
+    }
+
 }
