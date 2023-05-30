@@ -1,9 +1,10 @@
 @use 'variaveis';
 
 .sinopse {
-    width: 460px;
+    background-image: url(../../dist/images/imagem_nave.png);
     margin: 0 auto;
-    margin-top: 30px;
+    width: 100%;
+    background-size: cover;
 
     &__contente {
         h2 {

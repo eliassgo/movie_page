@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.main {
+    padding: 2.6vw;
+    min-height: 100vh;
+    background-image: url(../../dist/images/imagem_logo.png);
+    background-size: cover;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+
+    &__contente {
+        margin-bottom: 50px;
+
+    }
+
+}
+
+.text {
+    font-size: 15px;
+    color: #fff;
+}
+
+.title-h2 {
+    font-size: 40px;
+    color: variaveis.$corTextoSecundaria;
+}
+
+.title-h1 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 50px;
+    color: variaveis.$corTextoPrincipal;
+}

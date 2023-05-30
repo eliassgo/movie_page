@@ -1,4 +1,4 @@
-@use 'hero';
+@use 'title';
 @use 'variaveis';
 @use 'sinopse';
 @use 'menu';
@@ -14,4 +14,43 @@
 
 body {
     background-color: variaveis.$corPrincipal;
+}
+
+.image-text-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text__container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__text__container {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            height: 50%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    }
 }
