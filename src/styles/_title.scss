@@ -13,6 +13,11 @@
     &__contente {
         margin-bottom: 50px;
 
+        h1 {
+            letter-spacing: 10px;
+            margin-top: 100px;
+        }
+
     }
 
 }
@@ -23,13 +28,16 @@
 }
 
 .title-h2 {
-    font-size: 40px;
-    color: variaveis.$corTextoSecundaria;
+    font-size: 44px;
+    color: #827397;
+    top: 0;
+    position: absolute;
+    display: flex;
+    margin-top: 30px;
 }
 
 .title-h1 {
-    margin-top: 20px;
     margin-bottom: 12px;
-    font-size: 50px;
+    font-size: 60px;
     color: variaveis.$corTextoPrincipal;
 }
