@@ -7,20 +7,34 @@
     &__list {
         margin-top: 44px;
         display: none;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 5px;
 
+        &--trailer {
+            grid-template-columns: 1fr;
+        }
+
+        &--elenco {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            img {
+                max-width: 100%;
+                width: 300px;
+                height: 400px;
+                border-radius: 4px;
+            }
+        }
+
+        &--galeria {
+            grid-template-columns: 1fr 1fr;
+
+            img {
+                width: 690px;
+                height: 500px;
+            }
+        }
 
         &--is--active {
             display: grid;
             justify-items: center;
-        }
-
-        &__item {
-            img {
-                max-width: 100%;
-                border-radius: 4px;
-            }
         }
     }
 

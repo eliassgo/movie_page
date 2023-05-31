@@ -2,6 +2,8 @@
 @use 'variaveis';
 @use 'sinopse';
 @use 'menu';
+@use 'soundtrack';
+@use 'comment';
 
 
 * {
@@ -51,6 +53,22 @@ body {
             flex-direction: column;
             justify-content: center;
 
+        }
+    }
+}
+
+.items_list {
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            padding: 20px;
+
+            img {
+                width: 40px;
+            }
         }
     }
 }

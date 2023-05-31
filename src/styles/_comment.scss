@@ -1,0 +1,44 @@
+.comment {
+    padding-top: 20px;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+
+    &__form {
+        display: flex;
+        align-items: center;
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+
+            input,
+            textarea,
+            button {
+                margin-bottom: 8px;
+                padding: 8px;
+            }
+
+            textarea {
+                resize: none;
+                height: 180px;
+            }
+        }
+    }
+
+    picture {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+        }
+    }
+}

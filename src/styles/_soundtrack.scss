@@ -1,0 +1,28 @@
+.soundtrack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3.4vw;
+
+    &__picture {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    &__text {
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 20px;
+            padding: 10px 0 10px 0;
+        }
+
+    }
+}
