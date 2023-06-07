@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.hero {
+    padding: 2.6vw;
+    min-height: 100vh;
+    background-image: url(../../dist/images/imagem_logo.png);
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: auto;
+    }
+
+    &__contente {
+        margin-bottom: 50px;
+        max-width: 640px;
+
+        @media (max-width: 768px) {
+            max-width: 180px;
+            display: block;
+        }
+
+        h1 {
+            letter-spacing: 10px;
+
+            @media (max-width: 768px) {
+                margin-top: 50px;
+                color: #784931;
+            }
+        }
+
+    }
+
+}

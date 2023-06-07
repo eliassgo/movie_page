@@ -3,22 +3,27 @@
     grid-template-columns: 1fr 1fr;
     padding: 3.4vw;
 
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
     &__picture {
         display: flex;
         justify-content: center;
 
         img {
             width: 70%;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
     }
 
     &__text {
-        h2 {
-            text-align: center;
-            padding: 20px;
-        }
 
         p {
+            font-size: 15px;
             text-align: justify;
             text-indent: 20px;
             padding: 10px 0 10px 0;
