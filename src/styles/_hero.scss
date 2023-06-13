@@ -5,19 +5,19 @@
     min-height: 100vh;
     background-image: url(../../dist/images/imagem_logo.png);
     background-size: cover;
+    width: 100%;
 
     @media (max-width: 768px) {
-        display: block;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         min-height: auto;
     }
 
     &__contente {
         margin-bottom: 50px;
-        max-width: 640px;
 
         @media (max-width: 768px) {
+
             max-width: 180px;
             display: block;
         }
@@ -27,7 +27,7 @@
 
             @media (max-width: 768px) {
                 margin-top: 50px;
-                color: #784931;
+                color: variaveis.$corTextoSecundaria;
             }
         }
 

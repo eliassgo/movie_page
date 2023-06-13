@@ -30,6 +30,10 @@
                 grid-template-columns: 1fr;
             }
 
+            @media (max-width: 1024px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
             img {
                 max-width: 100%;
                 width: 300px;
@@ -44,6 +48,10 @@
 
             @media (max-width: 768px) {
                 grid-template-columns: 1fr;
+            }
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
             }
 
             img {
@@ -84,6 +92,10 @@
             margin: 0 1vw;
             cursor: pointer;
             border-bottom: 5px solid transparent;
+
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
 
             &--is--active {
                 border-color: #fff;
